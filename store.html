@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head><title> Felix Choy's Website | Store </title>
+        <link rel="stylesheet" href="styles.css">
+        <meta title="description" content="This is Felix Choy's personal website's store section."></head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!--wrap list element in <a> tag to make it a link-->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="store.html">Store</a></li>
+                </ul>
+            </nav>
+            <h1 class="header-name header-name-large">STORE</h1>
+        </header>
+
+        <section class="container content-section"> <!--For music-->
+            <h2 class="section-header">PURCHASE MY FAVORITE ARTISTS' MUSIC HERE</h2>
+            <div class="store-items"> <!--FOR ALL SHOP ITEMS-->
+                <div class="store-item"> <!--For one row-->
+                        <!--One attribute in row-->
+                        <span class="store-item-title">ddertbag</span>
+                    <img class="store-item-img"src="Images/avatars-PXSluy0GUhpaYtkQ-W3OLkg-t500x500.jpg">
+                    <div class="store-item-details">                
+                        <span class="store-item-description">Purchase their beats on traktrain</span>
+                        <a href="https://traktrain.com/ddertbag" target="_blank"><button class="btn btn-primary-color store-item-button" role="button">Traktrain</button></a>
+                    </div>
+                </div>
+                <br>
+                <div class="store-item"> <!--row 2-->
+                        <!--One attribute in row-->
+                        <span class="store-item-title">4am</span>
+                    <img class="store-item-img" src="Images/4am.jpg">
+                    <div class="store-item-details">                
+                        <span class="store-item-description">Purchase their beats on traktrain</span>
+                        <a href="https://traktrain.com/bruh" target="_blank"><button class="btn btn-primary-color store-item-button" role="button">Traktrain</button></a>
+                    </div>
+                </div>
+                <br>
+                <div class="store-item"> <!--row 3-->
+                        <!--One attribute in row-->
+                        <span class="store-item-title">taylor morgan</span>
+                    <img class="store-item-img" src="Images/taylor morgan sc picture.jpg">
+                    <div class="store-item-details">                
+                        <span class="store-item-description">Purchase their beats on traktrain</span>
+                        <a href="https://traktrain.com/taylor" target="_blank"><button class="btn btn-primary-color store-item-button" role="button">Traktrain</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="container content-section"><!--For merch-->
+            <h2 class="section-header" >MERCH</h2>
+            <div class="store-item"> <!--For one row-->
+                    <span class="store-item-title">Ina T-Shirt</span>
+                <img class="store-item-img" src="images/ina sweater.PNG">
+                <div class="store-item-details">                
+                    <span class="store-item-description">$30.00</span>
+                    <a href="https://www.omocat-shop.com/collections/omocat-x-hololive-en/products/takodachi-t-shirt" target="_blank"><button class ="btn btn-primary-color store-item-button" role="button">Purchase Here</button></a> 
+                </div>
+            </div>
+            <div class="store-item"> <!-- Row 2-->
+            <span class="store-item-title">Amelia Watson Cap</span>
+            <img class="store-item-img" src="images/ame cap.PNG">
+            <div class="store-item-details">                
+                <span class="store-item-description">$30.00</span>
+                <a href="https://www.omocat-shop.com/collections/omocat-x-hololive-en/products/pixel-amelia-cap" target="_blank"><button class ="btn btn-primary-color store-item-button" role="button">Purchase Here</button></a> 
+            </div>
+        </div>
+            <br>
+        </section>
+
+        <section class="container content-section"> <!--For cart-->
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row"> <!--Creating item | price | quantity row -->
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+
+            <div class="cart-items"> <!--Container hold all cart-rows and use the :last child property to put black border on bottom.-->
+                <div class="cart-row"> <!--Row 2-->
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/ina sweater.PNG" alt="could not be found.">
+                        <span class="cart-item-title">Ina shirt</span>
+                    </div>
+                    <span class="cart-price cart-column">$30.00</span>
+                    <div class="cart-quantity cart-column"> <!-- Cart quantity is one container-->
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger cart-quantity-button" role="button">Remove</button>
+                    </div>  
+                </div>
+
+                <div class="cart-row"> <!--Row 3-->
+                    <div class="cart-item cart-column"> 
+                        <img class="cart-item-image" src="Images/ame cap.PNG" alt="could not be found." >
+                        <span class= "cart-item-title">Ame cap</span>
+                    </div>
+                    <span class="cart-price cart-column">$30.00</span>
+                    <div class= "cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="2">
+                        <button class="btn btn-danger cart-quantity-button" role="button">Remove</button>
+                    </div>
+                </div>
+            </div>
+                <div class="cart-total"> <!--for total-->
+                    <span class="total-title">Total:</span>
+                    <span class="total-price">0 dollars</span>
+                </div> 
+                <button class="btn btn-primary-color btn-cart" role=button>Purchase</button>
+        </section>
+
+        <footer class="main-footer">
+            <div class="container main-footer-container"> <!--Wrap all content inside of footer to style-->
+                <h3 class="footer-header-text">Extra</h3>
+                <p class="footer-text">Made by Felix Choy</p>
+                <ul class="nav footer-nav">
+                    <li class="footer-li"><a href="https://soundcloud.com/pure-anxiety" target="_blank"><img src="/Images/soundcloud logo.png" alt="could not get image."></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap'); /*Import from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@font-face{ /*Used to create a "font class" with the font name used to reference it.*/
+    font-family:"Booter - Zero Zero"; 
+    src: url("Fonts/booter-zero-zero/BOOTERFF.ttf") format("truetype"),
+         url("Fonts/booter-zero-zero/BOOTERFO.ttf:") format("truetype"); /*Gets fonts, and format() tells us what kind of font type it is.*/
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    box-sizing: border-box; /*makes sure that the size of our elements are determined by the margin, padding, and size of content*/
+    /*Example : If we had an element that was 200px wide, and 20px padding w/o border-box, then the width of the object would be 200px wide w/ 20px left and right for padding, making it 240px. */
+    /*With border-box, the element will be exactly 200px wide, with the 20px padding included in it. */
+    font-family: Raleway; /*Non generic font, will need to be imported from a location.*/
+    color: rgb(0, 0, 0); /*font color*/
+}
+
+html, body{ /*eliminate all default padding in body in the html.*/
+    margin: 0; 
+    padding: 0;
+}
+
+.nav ul{ /*Remove padding and margin in all the ul's inside of the nav class.*/
+    margin: 0;
+}
+
+.nav li{
+    display: inline; /*Sets the list elements in the nav class to be inline instead of under each other.*/
+}
+
+/*Style the actual links in .nav element*/
+.nav a{
+    display: inline-block; /*creates a block around the element w/ the following properties below.*/
+    padding: 0.5em;
+    color: white;
+    text-decoration: none; /*removes all text decorations such as underlines*/
+}
+
+.nav a:hover{ /*Applied when the user hovers over the element.*/
+    background-color: rgba(255, 255, 255, 0.3); /*Background color of the element will be this color when hovered over.*/
+}
+
+.main-nav{
+    text-align: center; /*Centers text*/
+    font-size: 1.1em; /*1.1 times the current size*/
+    font-weight: lighter; /*determines how bold or dark they the font is.*/
+    border-bottom: 1px solid rgba(255,255,255,0.3); /*creates a border under the nav elements*/
+}
+
+.main-nav li{
+    padding: 0 5%; /*0 padding on top and bottom, 5% on left and right. Will remain spaced out when the screen grows or shrinks.*/
+}
+
+.main-header{
+    background-color: rgba(245, 169, 4, 0.9);
+    background-image: url(Images/sunset\ background.jpg); /*Used to get url of image*/
+    background-size: cover; /*Set size of background. cover means to expand as much as it can until one its borders is at edge of its width or its height.*/
+    background-blend-mode: multiply; /**used to tell how to mix two background images together. eg. this background and a backgorund color).*/ 
+    padding-bottom: 10px; 
+    margin: 0 auto;
+}
+
+.header-name{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero"; /*Non generic font, will be imported using @font-face from local machine*/
+    font-weight: normal;
+    color: white;
+}
+
+.header-name-large{
+    font-size: 6em;
+}
+
+.home-header-button-container{
+    /*display : flex;
+    flex-direction: row;
+    justify-content: center;
+    border : red 2px solid;*/
+}
+
+
+.container{
+    max-width: 900px; /*Prevents width from going farther than 900px*/
+    max-height: 1920px;
+    margin: 0 auto; /*Auto will always keep the margins at same ratio, regardless of how the screen is stretched.*/
+    padding: 0 1.5em;
+}
+
+.btn-container{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.content-section{
+    margin: 1em auto;
+    padding-bottom: 4em;
+}
+
+.section-header, .footer-header-text{
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-me-image{
+    float: left; /*Image will "float" itself to the left side of the document, wrapping aroudn the text.*/
+    height: 150px;
+    width: 150px;
+    margin: 15px; 
+    border-radius: 40%; /*Curve the border of the image by a certain percent from the square.*/
+}
+
+.about-me-content-section{
+    padding-bottom : 400px;
+}
+
+.about-me-text-div{
+    display : flex;
+    flex-direction: column;
+    position : relative;
+    top : 150px;
+}
+
+.about-me-text{
+    font-size: 1.3em;
+    margin: 0 auto;
+}
+
+.about-me-tutorial-link{
+    height : 50px;
+    padding-top : 20px;
+    text-align: center;
+    font-weight : bold;
+    text-decoration: none;
+}
+
+.main-footer{
+    background-color: #56ccf2;
+    color: white;
+    height : 210px;
+}
+
+.main-footer-container{
+    display: flex; /*Flex box display*/
+    align-items: center;
+    margin-top : 25px;
+}
+
+.main-footer-container ul{
+    flex-grow: 1; /*Tells all ul elements inside main-footer-container to grow as much as possible*/
+    text-align: end; /*Aligns element to right side*/
+    padding-top : 50px;
+}
+
+.footer-nav li{
+    padding: 0 0.5em;
+}
+
+.footer-nav img{
+    border-radius: 500%;
+    width: 100px; 
+    height: 100px;
+}
+
+.footer-text{
+    font-size: 2em;
+    padding-left: 5em;
+}
+
+.btn{
+    text-align: center;/*Centers the button text horizontally*/
+    vertical-align: middle; /*Centers the button text vertically*/
+    padding: .67em;
+    cursor: pointer; /*Changes cursor to pointer icon when hovered over*/
+}
+
+.btn-header{
+    margin: .5em 15% 2em 15%; /*Up, right, bottom, left side margin values*/
+    color: white;
+    border: 2px solid #2d9cd8; 
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 0; /*How round the border corners are (0 = no roundness)*/
+    font-size: 1.5em;
+    font-weight:lighter; 
+    padding-left:2em;
+    padding-right:2em;
+}
+
+.btn-header:hover{
+    background-color:rgba(255,255,255,.3);
+}
+
+.home-music-div{
+    display : flex;
+    flex-direction: row;
+}
+
+.btn-play{
+    display: block; /*Generates a block display*/
+    margin: 0 auto; /*auto centers the content in the center horizontally*/
+    color: #2d9cd8; 
+    font-size:48px;
+    border-radius: 30%;
+    padding: 0;
+    height: 100px;
+    width:100px;
+    position : relative;
+    bottom : 20px;
+    padding-left : 10px;
+}
+
+.musician-row{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em; /*Text padding from border*/
+    margin-bottom: 1em; /*Spacing between borders of elements*/
+}
+
+.musician-row:last-child{ /*Selects the last child of the class*/
+    border-bottom: none; /*Remove border on bottom of last child*/
+}
+
+.artist-item{
+    display: inline-block; /*Change element to in-line, but not break the text.*/
+    padding-right: .5em;
+}
+
+.artist-name{
+    color: #555; 
+    font-weight: bold;
+    width: 45%;
+
+}
+
+.artist-type{
+    width: 40%;
+}
+
+.artist-btn{
+    max-width: 19%;
+}
+
+.btn-primary-color{
+    color: white;
+    background-color: #56ccf2;
+    border: none;
+    border-radius: 0.3em;
+    font-weight:bold;
+}
+
+.btn-primary-color:hover{
+    background-color: #2D9CDB;
+}
+
+.store-item{ /*Store item name css*/
+    margin: 30px
+}
+
+.store-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.store-item-img{
+    height: 250px;
+}
+
+.store-item-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.store-item-description{
+    flex-grow: 1;
+    color: #333;
+    font-style: bold;
+}
+
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /*Puts an even amount of space around our items in our container*/
+}
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-column{
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row{
+    display: flex;
+}
+
+.cart-item{
+    width: 45%;
+}
+
+.cart-price{
+    width: 20%;
+    font-size: 1.2em;
+    color: rgb(53, 15, 15);
+}
+
+.cart-quantity{
+    width: 35%;
+}
+
+.cart-item-title{
+    color: #333;
+    margin-left: 1em;
+    font-size: 1.2em;
+}
+
+.cart-item-image{
+    width: 150px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.btn-danger{
+    color: white;
+    background-color:rgb(202, 42, 42);
+    border:none;
+    border-radius: 5%;
+}
+
+.btn-danger:hover{
+    background-color: rgb(82, 21, 21);
+}
+
+.cart-quantity-input{
+    height: 35px;
+    width: 195px;
+    border-radius: 5%;
+    border: 1px solid rgb(119, 25, 25);
+    background-color: rgb(240, 240, 240);
+    color: rgb(29, 28, 28);
+    padding: 0;
+    margin-right: 2px
+}
+
+.cart-row:last-child{
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column{ /*Remove border from cart-row's last child's .cart-column*/
+    border: none;
+}
+
+.cart-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 1px;
+}
+
+.total-title{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+    margin-right: 5px;
+}
+
+.total-price{
+    color: #333;
+    font-size: 1.2em;
+}
+
+.btn-cart{
+    display: block;
+    margin: 40px auto 80px auto;
+}
+
+
+/*FOR SOUND WAVE ANIMATION*/
+
+@keyframes quiet {
+    25%{
+      transform: scaleY(.6);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.8);
+    }
+  }
+  
+  @keyframes normal {
+    25%{
+      transform: scaleY(1);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.6);
+    }
+  }
+  @keyframes loud {
+    25%{
+      transform: scaleY(1);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(1.2);
+    }
+  }
+  
+  .boxContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    --boxSize: 8px;
+    --gutter: 4px;
+    width: calc((var(--boxSize) + var(--gutter)) * 5);
+    position : relative;
+    right : 850px;
+  }
+  
+  .box{
+    transform: scaleY(.4);
+    height: 100%;
+    width: var(--boxSize);
+    background: #2d9cd8;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+  }
+  
+  .box1{
+    transition: all 1s ease-in-out;
+  }
+  
+  .box2{
+    transition: all 1s ease-in-out;
+  }
+  
+  .box3{
+    transition: all 1s ease-in-out;
+  }
+  
+  .box4{
+    transition: all 1s ease-in-out;
+  }
+  
+  .box5{
+    transition: all 1s ease-in-out;
+}

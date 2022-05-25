@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript" src="script.js"></script>
+    <head> <title> Felix Choy | Musician Website </title>
+        <link rel="stylesheet" href="styles.css">
+        <meta title="description" content="This is Felix Choy's website for his favorite musician.">
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class = "nav main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!--wrap list element in <a> tag to make it a link-->
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="store.html">Store</a></li>
+                </ul>
+            </nav>
+            <h1 class="header-name header-name-large">Felix Choy</h1>
+            <!--TO DO SOME DAY : Make buttons side by side-->
+            <div class="home-header-button-container">
+                <div class="btn-container">
+                    <a href="https://traktrain.com/pureanxiety" target="_blank"><button class="btn btn-header" type="button">Purchase My Beats</button></a>
+                </div>
+                <div class="home-music-div">
+                    <button class="btn btn-header btn-play" id="home-play-button" value="paused" onclick="playPause()">&#9658;</button> <!-- Play button -->
+                    <div class="boxContainer">
+                        <div class="box box1"></div>
+                        <div class="box box2"></div>
+                        <div class="box box3"></div>
+                        <div class="box box4"></div>
+                        <div class="box box5"></div>
+                      </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="content-section container"> 
+            <h2 class="section-header">MY FAVORITE ARTISTS</h2>
+            <div> <!-- used to wrap all the rows as one elements-->
+                <div class="musician-row"> <!-- used for individual row elements for customization-->
+                    <span class="artist-item artist-name">Ddertbag</span>
+                    <span class="artist-item artist-type">Producer</span> 
+                    <a href="https://soundcloud.com/ddertbag" target="_blank"><button class="btn artist-item artist-btn btn-primary-color" type="button">Soundcloud</button></a>
+                </div>
+                <div class="musician-row"> 
+                    <span class = "artist-item artist-name">4am</span>
+                    <span class="artist-item artist-type">Producer / Artist</span> 
+                    <a href="https://soundcloud.com/4am-archive" target="_blank"><button class= "btn artist-item artist-btn btn-primary-color" type="button">Soundcloud</button></a>
+                </div>
+                <div class="musician-row"> 
+                    <span class = "artist-item artist-name">Taylor Morgan</span>
+                    <span class="artist-item artist-type">Producer</span> 
+                    <a href="https://soundcloud.com/taylor" target="_blank"><button class= "btn artist-item artist-btn btn-primary-color" type="button">Soundcloud</button></a>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="main-footer">
+            <div class="container main-footer-container"> <!--Wrap all content inside of footer to style-->
+                <h3 class="footer-header-text">Extra</h3>
+                <p class="footer-text">Made by Felix Choy</p>
+                <ul class="nav footer-nav">
+                    <li class="footer-li"><a href="https://soundcloud.com/pure-anxiety" target="_blank"><img src="/Images/soundcloud logo.png" alt="could not get image."></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
