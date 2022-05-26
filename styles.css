@@ -174,6 +174,7 @@ html, body{ /*eliminate all default padding in body in the html.*/
     padding-left: 5em;
 }
 
+
 .btn{
     text-align: center;/*Centers the button text horizontally*/
     vertical-align: middle; /*Centers the button text vertically*/
@@ -181,6 +182,7 @@ html, body{ /*eliminate all default padding in body in the html.*/
     cursor: pointer; /*Changes cursor to pointer icon when hovered over*/
 }
 
+/*------------- STYLING FOR BUTTON THAT IS IN THE HEADER ---------------------*/
 .btn-header{
     margin: .5em 15% 2em 15%; /*Up, right, bottom, left side margin values*/
     color: white;
@@ -220,7 +222,50 @@ html, body{ /*eliminate all default padding in body in the html.*/
     border-bottom: 1px solid black;
     padding-bottom: 1em; /*Text padding from border*/
     margin-bottom: 1em; /*Spacing between borders of elements*/
+    display : flex;
+    
 }
+
+/*------------ Styling for buttons in the "My Favorite Artists" Section ----------------*/
+.play-button-musician-row-ddertbag, .play-button-musician-row-4am, .play-button-musician-row-taylor {
+    margin-right : 10px;
+    height : 30px; /*Used to make the padding smaller on bottom*/
+}
+
+.btn-musician-row{
+    text-align: center;/*Centers the button text horizontally*/
+    vertical-align: middle; /*Centers the button text vertically*/
+    cursor: pointer; /*Changes cursor to pointer icon when hovered over*/
+}
+
+.btn-header-musician-row{
+    margin: .5em 15% 2em 15%; /*Up, right, bottom, left side margin values*/
+    color: white;
+    border: 2px solid #2d9cd8; 
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 0; /*How round the border corners are (0 = no roundness)*/
+    font-size: 1.5em;
+    font-weight:lighter; 
+    padding-left: 4em;
+    padding-right:4em;
+}
+
+.btn-header-musician-row:hover{
+    background-color:rgba(177, 176, 176, 0.2);
+}
+
+.btn-play-musician-row-ddertbag, .btn-play-musician-row-4am, .btn-play-musician-row-taylor {
+    margin: 0 auto; /*auto centers the content in the center horizontally*/
+    color: #2d9cd8; 
+    font-size:20px;
+    border-radius: 30%;
+    padding: 0;
+    height: 35px;
+    width:35px;
+    padding-left : 2px;
+}
+
+/*--------------------------------------------------------------------------*/
 
 .musician-row:last-child{ /*Selects the last child of the class*/
     border-bottom: none; /*Remove border on bottom of last child*/
@@ -238,12 +283,23 @@ html, body{ /*eliminate all default padding in body in the html.*/
 
 }
 
-.artist-type{
+/*.artist-type{ original before button changes
     width: 40%;
+}*/
+
+.artist-type1{
+    width: 40%;
+    margin-left : 68px;
 }
 
 .artist-btn{
-    max-width: 19%;
+    max-width: 100%; /*Was 19 %*/
+    position : relative;
+}
+
+.artist-btn1{
+    max-width: 100%; /*Was 19 %*/
+    margin-right : 40px;
 }
 
 .btn-primary-color{
@@ -428,6 +484,7 @@ html, body{ /*eliminate all default padding in body in the html.*/
     }
   }
   
+  /*Box container for the animated music wave in the header*/
   .boxContainer{
     display: flex;
     justify-content: space-between;
@@ -437,6 +494,17 @@ html, body{ /*eliminate all default padding in body in the html.*/
     width: calc((var(--boxSize) + var(--gutter)) * 5);
     position : relative;
     right : 850px;
+  }
+
+  /*Styling for box container div that is in the "my favorite artists" section*/
+  .boxContainerMusicianRow{
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    --boxSize: 8px;
+    --gutter: 4px;
+    width: calc((var(--boxSize) + var(--gutter)) * 5);
+    margin-right : 10px;
   }
   
   .box{
@@ -450,22 +518,22 @@ html, body{ /*eliminate all default padding in body in the html.*/
     border-radius: 8px;
   }
   
-  .box1{
+  .box1, .box1ddertbag, .box1FourAm, .box1TaylorMorgan{
     transition: all 1s ease-in-out;
   }
   
-  .box2{
+  .box2, .box2ddertbag, .box2FourAm, .box2TaylorMorgan{
     transition: all 1s ease-in-out;
   }
   
-  .box3{
+  .box3, .box3ddertbag, .box3FourAm, .box3TaylorMorgan{
     transition: all 1s ease-in-out;
   }
   
-  .box4{
+  .box4, .box4ddertbag, .box4FourAm, .box4TaylorMorgan{
     transition: all 1s ease-in-out;
   }
   
-  .box5{
+  .box5, .box5ddertbag, .box5FourAm, .box5TaylorMorgan{
     transition: all 1s ease-in-out;
 }
