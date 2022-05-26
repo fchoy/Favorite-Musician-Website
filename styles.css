@@ -131,6 +131,7 @@ html, body{ /*eliminate all default padding in body in the html.*/
 .about-me-text{
     font-size: 1.3em;
     margin: 0 auto;
+    font-weight: 600;
 }
 
 .about-me-tutorial-link{
@@ -263,6 +264,7 @@ html, body{ /*eliminate all default padding in body in the html.*/
     height: 35px;
     width:35px;
     padding-left : 2px;
+    padding-top : 1px;
 }
 
 /*--------------------------------------------------------------------------*/
@@ -312,6 +314,19 @@ html, body{ /*eliminate all default padding in body in the html.*/
 
 .btn-primary-color:hover{
     background-color: #2D9CDB;
+}
+
+.store-hr-separator{
+    border-color : rgb(0, 0, 0, 0.15);
+}
+
+.container-section-music{
+    /**border-bottom : 1px solid rgb(0, 0, 0, 0.3);*/
+    height : 1300px; /*Lower height to make the <hr> below a bit higher*/
+}
+
+.container-section-merch{
+    height : 850px;
 }
 
 .store-item{ /*Store item name css*/
